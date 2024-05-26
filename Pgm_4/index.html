@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades Form</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            color: #333;
+        }
+        .outer {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 2rem;
+            width: 40%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        input, select {
+            font-size: 1rem;
+            margin: 0.5rem 0 1rem 0;
+            padding: 0.5rem;
+            width: calc(100% - 1rem);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            background-color: #4a90e2;
+            color: white;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: #357ab8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Grades Form</h1>
+    <div class="outer">
+        <h1>Task 4</h1>
+        <h1>Enter Student Information</h1>
+        <form action="process_form.php" method="POST">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="db">DBMS Grade:</label>
+            <select name="db" id="db" required>
+                <option value="" disabled selected>Select</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            
+            <label for="cn">Computer Networks Grade:</label>
+            <select name="cn" id="cn" required>
+                <option value="" disabled selected>Select</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            
+            <label for="cd">Compiler Design Grade:</label>
+            <select name="cd" id="cd" required>
+                <option value="" disabled selected>Select</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            
+            <label for="ai">Artificial Intelligence Grade:</label>
+            <select name="ai" id="ai" required>
+                <option value="" disabled selected>Select</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            
+            <label for="cp">Cryptography Grade:</label>
+            <select name="cp" id="cp" required>
+                <option value="" disabled selected>Select</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            
+            <label for="oe">Open Elective Grade:</label>
+            <select name="oe" id="oe" required>
+                <option value="" disabled selected>Select</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            
+            <label for="dbl">DBMS Lab Grade:</label>
+            <select name="dbl" id="dbl" required>
+                <option value="" disabled selected>Select</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            
+            <label for="cnl">CN Lab Grade:</label>
+            <select name="cnl" id="cnl" required>
+                <option value="" disabled selected>Select</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
